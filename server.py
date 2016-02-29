@@ -8,7 +8,7 @@ def index():
   return '<p>Hello</p>'
   
 @APP.route('/random')
-def random():
+def myrandom():
   return random.randint(0,10)
   
 
