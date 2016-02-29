@@ -9,6 +9,8 @@ def index():
   
 @APP.route('/practice.html')
 def practice():
+  bottle.response.content_type = 'text/html'
+  return bottle.static_file('index.html', '.')
    
   
 
