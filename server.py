@@ -7,7 +7,7 @@ APP = bottle.default_app()
 def index():
   return '<p>Hello</p>'
   
-@APP.route('/random')
+@APP.route('/myrandom')
 def myrandom():
   return random.randint(0,10)
   
