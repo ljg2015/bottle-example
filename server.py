@@ -10,7 +10,7 @@ def index():
 @APP.route('/practice.html')
 def practice():
   bottle.response.content_type = 'text/html'
-  return bottle.static_file('index.html', '.')
+  return bottle.static_file('practice.html', '.')
    
  @APP.route('/greet/<salutation>/<name>')
  def greet(salutation, name):
